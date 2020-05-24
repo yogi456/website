@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="navbar-nav"><a href="#">Notification</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Notification</a></li>
+        </ul>
+        <li>
+            <li class="navbar-nav"><a href="index.html">Logout</a></li>
+        </li>
+    </ul>
+   
+  </div>
+
+</nav>
+  
+<div class="container">
+<h1>Welcome to this Portal</h1>
+</div>
+<div class="container"> 
+Select the teachers from the given list
+<!-- list of teachers will be here -->
+<form action="teachr.html" id="teacher" method="POST">
+<label for="account type">Choose Subject :</label>
+<br>
+<!-- we will have to iterate this for every teacher name -->
+
+          <select id="teacher" name="teacher" form="teacher" required >
+            <option value="Teacher">Subject1</option>
+            
+            <option value="ViceChansler">Subject2</option>
+            <option value="Teacher">Subject 2</option>
+            <option value="ViceChansler">Subject</option>
+          </select>
+          <button type="submit" class="btn btn-primary btn-sm">Search For teachers</button>
+</form>
+</div>
+<div class="container">
+<!-- here will be the download button if teacher accept the  -->
+<br>
+<button type="button" class="btn btn-primary btn-lg">Download</button>
+</div>
+
+
+</body>
+</html>

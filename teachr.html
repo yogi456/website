@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    Hello
+    <center>
+        <div class="col-md-12 ftco-animate">
+                        <div class="block-7">
+                          <div class="text-center">
+                          <h2 class="heading"></h2>
+                          <span class="price"><sup></sup> <span class="number"></span></span>
+                          <span class="excerpt d-block">{{i.username}}</span>
+    
+                          <h3 class="heading-2 my-4">Book Name: {{i.bookname}}</h3>
+    
+                          <ul class="pricing-text mb-5">
+                            <li>Added at:{{i.timeadded}}</li>
+                            <li>WrittenBy:{{i.bookauthor}}</li>
+                        <li>Bookid:{{i.bookid}}</li>
+                            <li> <p>{{i.bookdescription}}</p> </li>
+                        <li> <p>
+                          Available:{{i.active_status}}
+                        </p> </li>
+                          </ul>
+                      <a href="{%url 'detailsofbook' i.bookid%}" class="btn btn-primary d-block px-2 py-4">Request For Paper</a>
+        </div>
+        </center>
+    
+</body>
+</html>
